@@ -1,0 +1,27 @@
+Remote repository on windows shared drive
+
+http://elegantcode.com/2011/06/18/git-on-windows-creating-a-network-shared-central-repository/
+
+
+-----------
+It sounds like your paths aren't valid. Delete the bare repository and try this from your local repository working folder:
+
+git init --bare //UNC/Path/to/Central.git
+git remote add Central //UNC/Path/to/Central.git
+git push --all Central
+shareimprove this answer
+-----------
+http://www.dalsoft.co.uk/blog/index.php/2011/08/30/getting-started-with-git-on-windows/
+http://www.dalsoft.co.uk/blog/index.php/2011/08/30/getting-started-with-git-on-windows/
+
+
+
+https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes#Showing-Your-Remotes
+	
+https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init
+
+http://windows.microsoft.com/en-in/windows-vista/share-files-and-folders-over-the-network-from-windows-vista-inside-out
+
+
+ 
+ 
